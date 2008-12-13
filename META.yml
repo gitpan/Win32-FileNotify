@@ -1,23 +1,27 @@
 ---
 name: Win32-FileNotify
-version: 0.1
+version: 0.2
 author:
   - 'Renee Baecker <module@renee-baecker.de>'
 abstract: Monitor file changes
 license: perl
-build_requires:
-  Test::More: 0
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
   Carp: 0
   File::Basename: 0
-  Win32::ChangeNotify: 1.05
-generated_by: h2xs version 1.23
+  Test::More: 0
+  Win32::ChangeNotify: 0
+build_requires:
+  Carp: 0
+  File::Basename: 0
+  Test::More: 0
+  Win32::ChangeNotify: 0
+provides:
+  Win32::FileNotify:
+    file: lib/Win32/FileNotify.pm
+    version: 0.2
+generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
-provides:
-  Win32::FileNotify:
-    file: lib/Win32::FileNotify.pm
-    version: 0.1
-resources:
-  license: http://dev.perl.org/licenses
-
